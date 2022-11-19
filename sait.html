@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="css/sait.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>TrAvAl</span>
+    </div>
+    <div id="about">
+      <a href="#"  onclick="slowScroll('#main')" title="Возможности">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#" onclick="slowScroll('#adr')" title="Адрес">Адрес</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Путишствие</h1>
+    <h3>открывает новый этап жизни!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Наши услуги помогут вам!</h2>
+      <span> Большой выбор всего, что может вам пригодиться</span>
+    </div>
+    <div class="text">
+      <span>Вы наконец-то решились отложить накопившиеся дела в сторонку. Дорогие дела, идите в угол. Так же вы повесили табличку «меня нет», достали парадный купальный костюм… и тут… Танцы-танцы-танцы. Отпуск начался!
+
+        Спешим Вас предупредить: подбор подходящего тура – ответственная задача и, чтобы польза была максимальная, а усилия минимальны – Вам нужен грамотный и ответственный помощник! Опытный, знающий и обладающий хорошими связями в сфере туризма! Без связей, какие танцы? Который знает, что Вам предложить, знает, как сэкономить и который предоставит все гарантии хорошего и качественного отдыха!
+        
+        Кто это? Кто? Ну, говорите? Ок, держите пряник! Угадали! Правильно – это мы! Турагентство «TrAvAl»! Заводите мотор, мы поедем отдыхать… уххх</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <img src="https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+      <span>С нами вы можете посетить Европу</span>
+    </div>
+    <div class="img">
+      <img src="https://images.pexels.com/photos/844167/pexels-photo-844167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+      <span>С нами вы можете посетить Южную Америку</span>
+    </div>
+    <div class="img">
+      <img src="https://images.pexels.com/photos/12950448/pexels-photo-12950448.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+      <span>С нами вы можете посетить Cеверную Америку</span>
+    </div>
+    <div class="img">
+      <img src="https://images.pexels.com/photos/235731/pexels-photo-235731.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+      <span>С нами вы можете посетить Азию</span>
+    </div>
+  </div> 
+ 
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Цены</span><br>
+      <span class="heading">У нас лучшие цены и это — Правда!?</span>
+      <p>Нам хочется, чтобы каждый из Вас мог отдохнуть качественно, с максимальным комфортом и с выгодой для Вашего кошелька. Нам нужны ваши очаровательные улыбки. Поэтому мы не завлекаем небывалыми скидками и сомнительными предложениями (только если печеньками), а просто продаём туры БЕЗ НАЦЕНОК! Стоимость Вашей путевки абсолютно равна ценнику у туроператора, вы можете проверить это прямо сейчас! Ждем…
+
+        Проверили? Убедились? Более того, выбрав тур на сайте любого ведущего туроператора Казахстана, Вы можете смело обратиться к нам для его бронирования на более выгодных условиях. Всё это говорит о наших добрых и дружеских отношениях с ведущими туроператорами страны, об отношениях, которые придутся Вам только на руку!</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading"> Какое оно — Турагентство «TrAvAl»</span>
+      <p>Мы могли бы даже сыграть вам сценку в лицах или спеть о том, насколько мы профессиональны, как мы любим свою работу и каждого путешественника, открывшего для себя мир благодаря нашему агентству… Но к чему слова, ведь наша репутация - это ваши впечатления от путешествий!
+
+        Мы любим этот мир, и от души желаем каждому из вас лично познакомиться с каждым уголком нашей прекрасной зеленой планеты! Покормить с руки сурриката, покататься на слоне, угостить мармеладом дружелюбную макаку… Ох, это же так прекрасно!</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть?</span>
+      <p>Вы можете быть уверены, что Ваш отдых состоится наилучшим образом, ведь для сотрудничества мы выбираем исключительно надежных и проверенных партнеров! Наши отношения выдержаны временем и многочисленными успешными поездками туристов, выбравших для своего отдыха турагентство «TrAvAl»!».Наше агентство работает в «белую»! Подписываются договоры, пробиваются все чеки, платятся налоги! А это значит, что мы отвечаем по своим обязательствам и Вы гарантированно получите тот отдых, который обговорен в договоре! Наши сотрудники опытные компетентные специалисты в сфере туристических услуг! Каждый из нас в любой момент готов ответить на все Ваши вопросы, дать полезные рекомендации и грамотный совет в сложившейся ситуации, а также помочь с подбором и бронированием тура!</p>
+    </div>
+  </div>
+  <div id="adr">
+    <div>
+<span class="title">Мой адрес:</span><br>
+<span class="heading">Город Астана 7-континент блoк "А"</span>
+</div>
+<div>
+  <span class="title">Номер телефона:</span><br>
+<a href="tel:+77770127634">+77770127634</a>
+</div>  
+<div>
+  <a href=""><img class="img" src="https://img.icons8.com/doodle/512/telegram-app.png" alt=""></a>
+  <a href="https://www.instagram.com/timoontii/"><img class="img" src="https://img.icons8.com/fluency/512/instagram-new.png" alt=""></a>
+</div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
